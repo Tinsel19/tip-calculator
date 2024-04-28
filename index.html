@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- title of page -->
+    <img src="./logo.svg" alt="spliiter logo">
+
+    <!-- container grid  -->
+    <section class="c-grid">
+        <!-- first half of th calculator  -->
+        <section class="f-half">
+            <!-- bill entery field div -->
+            <div class="input" id="calc-input1">
+                <span class="span1">Bill</span>
+                <span id="dollar" class="none1">$</span>
+                <input type="number" value="142.00" required>
+            </div>
+
+            <span class="span2">Select Tip %</span >
+            <div class="tbt-cols">
+                <button id="five%">5%</button>
+                <button id="ten%">10%</button>
+                <button id="fift%">15%</button>
+                <button id="tfive%">25%</button>
+                <button id="fifty%">50%</button>
+                <input id="custom%" class="custom" type="number" placeholder="Custom" required>
+            </div>
+
+            <div class="grid">
+                <span class="span span3">Number of People</span>
+                <span id="picon" ><img class="img-icon" src="./icon-person.svg" alt=""></span>
+                <input class="input2" type="number" id="numP" value="12" required>
+
+            </div>
+        </section>
+
+        <!-- second half of the calculator -->
+        <section class="s-half">
+            <div class="flex-div">
+                <div class="block-div">
+                    <p class="w-txt">Tip Amount</p>
+                    <span class="g-txt">/ person</span>
+                </div>  
+                <p>$4.27</p>
+            </div>
+
+            <div class="flex-div">
+                <div class="block-div">
+                    <p class="w-txt">Total</p>
+                    <span class="g-txt">/ person</span>
+                </div>
+                <p>$32.79</p>
+            </div>
+
+            <button id="reset" class="reset">RESET</button>
+        </section>
+    </section>
+    
+    
+    <script src="index.js">
+    </script>
+</body>
+</html>

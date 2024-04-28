@@ -1,0 +1,180 @@
+
+
+
+html {
+    background-color: hsl(185, 41%, 84%);
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    padding: 5rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-grid {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    /* font-size: 24px; */
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    padding: 3rem;
+    
+}
+
+.f-half {
+    /* background-color: green; */
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.block-div {
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    outline: none;
+    border: 1px solid transparent;
+}
+.input {
+    display: grid;
+}
+.input input {
+    border-radius: 15px;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+    height: 3rem;
+    text-align: right;
+    position: relative;
+    top: -10px;
+}
+
+.input input:focus{
+    border: 3px solid hsl(184, 14%, 56%);
+}
+
+/* first column span edits  */
+span{
+    font-weight: bold;
+    display: block;
+    color: hsl(184, 14%, 56%);
+    font-size: .8rem;
+}
+.dollar {
+    color: hsl(185, 41%, 84%)
+}
+.span1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.span2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.span3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#picon{
+    color: hsl(185, 41%, 84%);
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+.img-icon {
+    opacity: .4;
+}
+
+.grid {
+    display: grid;
+}
+.none1{
+    display: inline;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    z-index: 2;
+    color: hsl(185, 41%, 84%);
+    height: 10px;
+    width: 10px;
+}
+
+.input2 {
+    color: hsl(183, 100%, 15%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: right;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.input2:focus{
+    border: 3px solid hsl(184, 14%, 56%);
+}
+
+.custom {
+    border-radius: 10px;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0px;
+    width: auto;
+}
+
+.custom:focus{
+    border: 3px solid hsl(184, 14%, 56%);
+}
+
+
+.s-half {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tbt-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.tbt-cols button {
+    padding: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.tbt-cols button:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    border: 1px solid transparent;
+}
