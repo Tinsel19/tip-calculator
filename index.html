@@ -19,7 +19,7 @@
             <div class="input" id="calc-input1">
                 <span class="span1">Bill</span>
                 <span id="dollar" class="none1">$</span>
-                <input type="number" value="142.00" required>
+                <input type="number" id="main-input" value="142.00" required>
             </div>
 
             <span class="span2">Select Tip %</span >
@@ -47,7 +47,7 @@
                     <p class="w-txt">Tip Amount</p>
                     <span class="g-txt">/ person</span>
                 </div>  
-                <p class="result">$4.27</p>
+                <p id="single-result" class="result">$4.27</p>
             </div>
 
             <div class="flex-div">
@@ -55,7 +55,7 @@
                     <p class="w-txt">Total</p>
                     <span class="g-txt">/ person</span>
                 </div>
-                <p class="result">$32.79</p>
+                <p id="total-result" class="result">$32.79</p>
             </div>
 
             <button id="reset" class="reset">RESET</button>
