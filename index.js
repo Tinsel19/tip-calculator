@@ -22,32 +22,38 @@ var numPerson = parseInt(mainInput2.value);
 five.addEventListener('click', function() {
     fivePercentHold = parseFloat(mainInput.value) * 0.05;
     singleResult.textContent = "$" + fivePercentHold.toFixed(2);
+    totalResult.textContent = "$" + (fivePercentHold * parseFloat(mainInput2.value)).toFixed(2);
 })
 
 ten.addEventListener('click', function() {
     tenPercentHold = parseFloat(mainInput.value) * 0.1;
     singleResult.textContent = "$" + tenPercentHold.toFixed(2);
+    totalResult.textContent = "$" + (tenPercentHold * parseFloat(mainInput2.value)).toFixed(2);
 })
 
 fifteen.addEventListener('click', function() {
     fifteenPercentHold = parseFloat(mainInput.value) * 0.15;
     singleResult.textContent = "$" + fifteenPercentHold.toFixed(2);
+    totalResult.textContent = "$" + (fifteenPercentHold * parseFloat(mainInput2.value)).toFixed(2);
 })
 
 twentyfive.addEventListener('click', function() {
     twentyfivePercentHold = parseFloat(mainInput.value) * 0.25;
     singleResult.textContent = "$" + twentyfivePercentHold.toFixed(2);
+    totalResult.textContent = "$" + (twentyfivePercentHold * parseFloat(mainInput2.value)).toFixed(2);
 })
 
 fifty.addEventListener('click', function() {
     fiftyPercentHold = parseFloat(mainInput.value) * 0.5;
-    singleResult.textContent = "$" + fifteenPercentHold.toFixed(2);
+    singleResult.textContent = "$" + fiftyPercentHold.toFixed(2);
+    totalResult.textContent = "$" + (fiftyPercentHold * parseFloat(mainInput2.value)).toFixed(2);
 })
 
 custom.addEventListener('input', updateCustom);
 function updateCustom(e) {
     customPercentHold = parseFloat(mainInput.value) * parseFloat(custom.value)/100;
     singleResult.textContent = "$" + customPercentHold.toFixed(2);
+    totalResult.textContent = "$" + (customPercentHold * parseFloat(mainInput2.value)).toFixed(2);
 }
 
 mainInput2.addEventListener('input', updateNumP);
@@ -61,5 +67,4 @@ reset.addEventListener('click', function () {
     custom.value = '';
     singleResult.textContent = '';
     totalResult.textContent = '';
-    // reset.style.backgroundColor = 'hsl(183, 100%, 15%)';
 })
